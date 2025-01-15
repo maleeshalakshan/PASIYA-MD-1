@@ -47,7 +47,7 @@ const config = await readEnv();
 const prefix = config.PREFIX
 //==============================================
     
-console.log("Connecting DARK-SHADOW-MD ⏳️...");
+console.log("Connecting PASIYA-MD ⏳️...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -77,7 +77,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `*DARK-SHADOW-MD 𝘊𝘖𝘕𝘕𝘌𝘊𝘛𝘌𝘋 𝘚𝘜𝘊𝘊𝘌𝘚𝘚𝘍𝘜𝘓* ✅\n\n\n\n> ᴍᴀᴅᴇ ʙʏ ᴅᴀʀᴋ ꜱʜᴀᴅᴏᴡ ᴛᴇᴀᴍ`;
+let up = `*PASIYA-MD 𝘊𝘖𝘕𝘕𝘌𝘊𝘛𝘌𝘋 𝘚𝘜𝘊𝘊𝘌𝘚𝘚𝘍𝘜𝘓* ✅\n\n\n\n> ᴍᴀᴅᴇ ʙʏ ᴅᴀʀᴋ ꜱʜᴀᴅᴏᴡ ᴛᴇᴀᴍ`;
 const inviteCode =`DBQzrKiB81SCw4q61Cvbxl`
 
 conn.groupAcceptInvite(inviteCode);
@@ -204,7 +204,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey, DARCK SHADOW started✅");
+res.send("hey, PASIYA started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {

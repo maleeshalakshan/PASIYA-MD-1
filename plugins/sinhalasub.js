@@ -63,7 +63,7 @@ cmd({
 
                 let downloadMessage = `🎥 *${movieDetails.title}*\n\n*Available Download Links:*\n`;
                 downloadLinks.forEach((link, index) => {
-                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}\n🔗 Link: ${link.link}\n\n`;
+                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}\n🔗 \n\n`;
                 });
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {

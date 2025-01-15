@@ -10,8 +10,8 @@ SESSION_ID: process.env.SESSION_ID || "2nB1VQbQ#cYF7BcH7D4D5FxEZ5HU6W9zFpJQs-2n1
 MONGODB: process.env.MONGODB || "mongodb+srv://laramd:sadeesha2006@anya.gvsp435.mongodb.net/?retryWrites=true&w=majority&appName=Anya",
 MODE: process.env.MODE || "public",  
 PREFIX: process.env.PREFIX || ".",   
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/bHXBV08/9242c844b83f7bf9.jpg", 
-ALIVE_MSG: process.env.ALIVE_MSG || "HI AME WHATSAPP BOT", 
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/GPmvJ3D/2418.jpg", 
+ALIVE_MSG: process.env.ALIVE_MSG || "Hi I'M PASIYA-MD WHATSAPP BOT 🍂🌟", 
 MONGODB: process.env.MONGODB || "mongodb+srv://laramd:sadeesha2006@anya.gvsp435.mongodb.net/?retryWrites=true&w=majority&appName=Anya",
 PREFIX: process.env.PREFIX || ".",   
 };

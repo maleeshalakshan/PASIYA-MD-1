@@ -18,7 +18,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['+94718461889']
+const ownerNumber = ['+94774362549']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -151,25 +151,6 @@ if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
 //====================react============================
 
-//=============== OWNER REACT =============== 
-                       
-let owner = '94718461889@s.whatsapp.net'
-let supun = '94718461889@s.whatsapp.net'
-let lakshan = '94704031866@s.whatsapp.net'
-let dinisuru = '94768844616@s.whatsapp.net'
-            
-if (!isReact && sender === owner){
-  m.react('👨‍💻') 
-};
-if (!isReact && sender === supun){
-  m.react('🎉') 
-};
-if (!isReact && sender === lakshan){
-  m.react('🦋') 
-};
-if (!isReact && sender === dinisuru){
-  m.react('💦') 
-};
 
 //=============== AUTO REACT ===============
 

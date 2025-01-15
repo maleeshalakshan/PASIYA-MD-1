@@ -42,6 +42,7 @@ cmd({
         });
 
         const sentMsg = await conn.sendMessage(m.chat, {
+            await conn.sendMessage(from, { react: { text: '⬆️', key: mek.key }
             image: { url: searchResults[0].thumbnail }, // Show the thumbnail of the first result
             caption: `${resultsMessage}`
         }, { quoted: mek });

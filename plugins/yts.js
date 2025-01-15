@@ -1,12 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
 const config = require('../config')
 const l = console.log
 const { cmd, commands } = require('../command')
@@ -19,7 +10,7 @@ cmd({
     pattern: "yts",
     alias: ["ytsearch"],
     use: '.yts sameer kutti',
-    react: "🔎",
+    react: "🔍",
     desc: "Search and get details from youtube.",
     category: "search",
     filename: __filename

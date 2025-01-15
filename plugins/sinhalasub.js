@@ -7,7 +7,7 @@ const api_key = `Manul-Ofc-Sl-Sub-Key-9`;
 cmd({
     pattern: "sinhala",
     alias: ["mv", "sb"],
-    react: '🔎',
+    react: '📽️',
     category: "download",
     desc: "Search movies on sinhalasub and get download links",
     filename: __filename
@@ -93,7 +93,7 @@ cmd({
                                 },
                                 mimetype: 'video/mp4',
                                 fileName: `📽️ᴘᴀꜱɪ ᴍᴠ📽️ ${movieDetails.title} - ${selectedLink.quality}.mp4`,
-                                caption: `> *~ᴘᴀꜱɪʏᴀ ᴍᴠ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*`
+                                caption: `> 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗠𝗩 🎥 `
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });

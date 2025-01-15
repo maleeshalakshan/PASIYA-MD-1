@@ -42,7 +42,7 @@ cmd({
         });
 
         const sentMsg = await conn.sendMessage(m.chat, {
-            await conn.sendMessage(from, { react: { text: '⬆️'}})
+            await conn.sendMessage(from, { react: '🎬' })
             image: { url: searchResults[0].thumbnail }, // Show the thumbnail of the first result
             caption: `${resultsMessage}`
         }, { quoted: mek });
@@ -98,7 +98,7 @@ cmd({
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
-                    await conn.sendMessage(from, { text: '*𝘜𝘗𝘓𝘖𝘈𝘋𝘌𝘋 𝘚𝘜𝘊𝘊𝘌𝘚𝘍𝘜𝘓𝘓𝘠 ✅*' })
+                    await conn.sendMessage(from, { text: '*_ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ✓_*' })
                 };
 
                 // Listen for user's reply to select the download quality

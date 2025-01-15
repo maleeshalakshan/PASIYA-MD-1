@@ -30,7 +30,7 @@ cmd({
         const searchResults = movieData.slice(0, 10);
 
         // Format and send the search results message
-        let resultsMessage = `*🎬~PASIYA-MD MV SEARCH🎬* ${q}:\n\n`;
+        let resultsMessage = `*🎬PASIYA-MD MV SEARCH = ${q} 🎬*:\n\n`;
         searchResults.forEach((result, index) => {
             const title = result.title || 'No title available';
             const link = result.link || 'No link available';
@@ -63,7 +63,7 @@ cmd({
 
                 let downloadMessage = `🎥 *${movieDetails.title}*\n\n*Available Download Links:*\n`;
                 downloadLinks.forEach((link, index) => {
-                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}`;
+                    downloadMessage += `*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘌 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙* \n\n${index + 1}.*\n ${link.quality} -\n ${link.size}\n\n *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 | 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗*`;
                 });
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {

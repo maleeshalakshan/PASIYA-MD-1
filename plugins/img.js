@@ -1,18 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
-
-
-
-
-
-
 const { cmd } = require('../command');
 const axios = require('axios');
 const { Buffer } = require('buffer');
@@ -24,7 +9,7 @@ const GOOGLE_CX = 'baf9bdb0c631236e5'; // Replace with your Google Custom Search
 cmd({
     pattern: "img",
     desc: "Search and send images from Google.",
-    react: "🖼️",
+    react: "🏞️",
     category: "media",
     filename: __filename
 },
@@ -55,11 +40,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             await conn.sendMessage(from, {
                 image: buffer,
                 caption: `
-*💗 Image ${i + 1} from your search! 💗*
+*⛬ Image ${i + 1} from your search! ⛬*
 
- *©  𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤𝖣 𝖡𝖸 𝖪𝖤𝖱𝖬 ! 👾*
+ *©  𝖦ENERATED BY ~PASIYA ! 👾*
 
-> 🍒KERM_MD-V4🍒`
+> *ᴘᴀꜱɪʏᴀ-ᴍᴅ-1`
 }, { quoted: mek });
 }
 

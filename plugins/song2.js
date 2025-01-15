@@ -47,7 +47,7 @@ await conn.sendMessage(m.chat, {
     
     const downloadUrl = response.data.dl_link;
 //============Send Message======================
-await conn.sendMessage(𝘞𝘢𝘪𝘵 𝘚𝘦𝘯𝘥𝘪𝘯𝘨 𝘈𝘶𝘥𝘪𝘰𝘯 & 𝘋𝘰𝘤𝘶𝘮𝘦𝘯𝘵)     
+await conn.sendMessage(from, { text: '*𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵 𝘚𝘦𝘯𝘥𝘪𝘯𝘨 𝘵𝘩𝘦 𝘈𝘶𝘥𝘪𝘰🎧 & 𝘋𝘰𝘤𝘶𝘮𝘦𝘯𝘵📂' })     
 //============Send Audio======================
 await conn.sendMessage(from,{audio:{url: downloadUrl },mimetype:"audio/mpeg",caption :"𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬  ▏𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🎧"},{quoted:mek})
 //=============Send Document=================

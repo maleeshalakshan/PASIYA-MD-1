@@ -1,10 +1,20 @@
+/*created by Kgtech 🕵
+contact dev1 237656520674 ♻️
+contact dev2 237650564445 ♻️
+© Copy coder alert ⚠
+*/
+
+
+
+
+
 const config = require('../config')
 const {cmd , commands} = require('../command')
 const os = require("os")
 const {runtime} = require('../lib/functions')
 cmd({
     pattern: "system",
-    react: "⚙️",
+    react: "♠️",
     alias: ["uptime" ,"runtime"],
     desc: "cheack uptime",
     category: "main",
@@ -13,7 +23,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let status = `*╭──────────●●►*
-*~PASIYA-MD SYSTEME*
+*KERM_MD-V4 UPTIME LIST↷*
 
 *_UPTIME:➠_*  ${runtime(process.uptime())}
 
@@ -21,7 +31,7 @@ let status = `*╭──────────●●►*
 
 *_HOSTNAME:➠_* ${os.hostname()}
 
-*_OWNER:➠_* *~ＰＡＳＩＮＤＵ Ｘ*
+*_OWNER:➠_* *KG TECH*
 *╰──────────●●►*
 `
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:`${status}`},{quoted:mek})

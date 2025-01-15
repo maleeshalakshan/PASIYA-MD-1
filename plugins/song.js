@@ -25,15 +25,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  > *🎧𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗔𝗨𝗗𝗜𝗢🎧*
 ╭──────────────────────
 
-*`☘️| ➢| ᴛɪᴛʟᴇ  :* *${data.title}`*
+*☘️| ➢| ᴛɪᴛʟᴇ  :* *${data.title}*
 
-*`👀 ➢| ᴠɪᴇᴡꜱ  :* *${data.views}`*
+*👀 ➢| ᴠɪᴇᴡꜱ  :* *${data.views}*
 
-*`⛔ ➢| ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ :* *${data.description}`*
+*⛔ ➢| ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ :* *${data.description}*
 
-*`⏰ ➢| ᴛɪᴍᴇ :* *${data.timestamp}`* 
+*⏰ ➢| ᴛɪᴍᴇ :* *${data.timestamp}* 
 
-*`📅 ➢| ᴀɢᴏ :* *${data.ago}`*
+*📅 ➢| ᴀɢᴏ :* *${data.ago}*
 
 > *𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬 || 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🧑‍💻*;
 

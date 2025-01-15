@@ -69,7 +69,7 @@ cmd({
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {
                     image: { url: selectedMovie.thumbnail }, // Show the selected movie's thumbnail
                     caption: `${downloadMessage}`
-                ,  } quoted: replyMek });
+                }, { quoted: replyMek });
 
                 const pixelDrainMessageID = pixelDrainMsg.key.id;
 

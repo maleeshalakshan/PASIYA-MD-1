@@ -1,17 +1,9 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
 const { cmd } = require('../command');
 
 cmd({
     pattern: "owner",
-    react: "👑", // Reaction emoji when the command is triggered
-    alias: ["silent", "kerm"],
+    react: "🤖", // Reaction emoji when the command is triggered
+    alias: ["silent", "pasi"],
     desc: "Get owner number",
     category: "main",
     filename: __filename
@@ -19,9 +11,9 @@ cmd({
 async (conn, mek, m, { from }) => {
     try {
         // Owner's contact info
-        const ownerNumber = '+237656520674'; // Replace this with the actual owner number
-        const ownerName = '➺✭𝙺𝙴𝚁𝙼✭'; // Replace this with the owner's name
-        const organization = 'UD TEAM'; // Optional: replace with the owner's organization
+        const ownerNumber = '+94774362549'; // Replace this with the actual owner number
+        const ownerName = '*𝙿𝙰𝚂𝙸𝚈𝙰 🍂*'; // Replace this with the owner's name
+        const organization = '*𝐗-𝐓𝐄𝐀𝐌*'; // Optional: replace with the owner's organization
 
         // Create a vCard (contact card) for the owner
         const vcard = 'BEGIN:VCARD\n' +
@@ -43,7 +35,7 @@ async (conn, mek, m, { from }) => {
         await conn.sendMessage(from, {
             text: `This is the owner's contact: ${ownerName}`,
             contextInfo: {
-                mentionedJid: [ownerNumber.replace('+237656520674') + '+923096287432@s.whatsapp.net'], // Mention the owner
+                mentionedJid: [ownerNumber.replace('+94774362549') + '+94765588400@s.whatsapp.net'], // Mention the owner
                 quotedMessageId: sentVCard.key.id // Reference the vCard message
             }
         }, { quoted: mek });

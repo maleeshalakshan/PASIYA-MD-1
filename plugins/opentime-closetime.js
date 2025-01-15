@@ -1,12 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
 const config = require('../config')
 const { cmd, commands } = require('../command')
 
@@ -36,7 +27,7 @@ if (!isAdmins) return reply(ADMIN)
                 reply(`Open time ${q} starting from now`)
                 setTimeout(() => {
                     var nomor = mek.participant
-                    const open = `*OPEN TIME* THE GROUP WAS OPENED BY KERM_MD-V4 TO APPROVED ADMIN\n NOW MEMBERS CAN SEND MESSAGES 🔓`
+                    const open = `*OPEN TIME* THE GROUP WAS OPENED BY ~PASIYA-MD TO APPROVED ADMIN\n NOW MEMBERS CAN SEND MESSAGES 🔓`
                     conn.groupSettingUpdate(from, 'not_announcement')
                     reply(open)
                 }, timer)
@@ -73,7 +64,7 @@ if (!isAdmins) return reply(ADMIN)
                 reply(`Close time ${q} starting from now`)
                 setTimeout(() => {
                     var nomor = m.participant
-                    const close = `*CLOSE TIME* GROUP CLOSED BY KERM_MD-V4 AT APPROVED ADMIN\nNOW ONLY ADMIN CAN SEND MESSAGES 🔐`
+                    const close = `*CLOSE TIME* GROUP CLOSED BY PASIYA-MD AT APPROVED ADMIN\nNOW ONLY ADMIN CAN SEND MESSAGES 🔐`
                     conn.groupSettingUpdate(from, 'announcement')
                     reply(close)
                 }, timer)
@@ -134,11 +125,11 @@ if (!isOwner || !isAdmins) return;
 if (!m.isGroup) return reply(mg.onlygroup);
 if (!isBotAdmins) return reply(mg.needbotadmins);     
             await conn.groupSettingUpdate(m.chat, "announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT MUTED BY KERM_MD-V4* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT MUTED BY PASIYA-MD* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*PLEASE GIVE ME A ADDMIN ROLE❗👻*')    
+reply('*PLEASE GIVE ME A ADDMIN FIRST❗🙌*')    
 } 
 })
 
@@ -159,11 +150,11 @@ if (!isOwner || !isAdmins) return;
 if (!m.isGroup) return reply(mg.onlygroup);
 if (!isBotAdmins) return reply(mg.needbotadmins);     
             await conn.groupSettingUpdate(m.chat, "not_announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT UNMUTED BY KERM_MD-V4* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT UNMUTED BY PASIYA-MD* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*PLEASE GIVE ME A ADDMIN ROLE❗👻*')    
+reply('*PLEASE GIVE ME A ADDMIN FIRST❗🙌*')    
 } 
 })
 

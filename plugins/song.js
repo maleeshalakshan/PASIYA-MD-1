@@ -22,19 +22,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const url = data.url;
 
         let desc = `
- *🎶~PASIYA YT DOWNLOADER 🎶*
-  ╭───────────────────────
-*☘️ ▮ ᴛɪᴛʟᴇ\` :* ${data.title}
+ > *🎧𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗔𝗨𝗗𝗜𝗢🎧*
+╭──────────────────────
 
-*👀 ▮ ᴠɪᴇᴡꜱ\` :* ${data.views}
+*`☘️ ➢| ᴛɪᴛʟᴇ` :* *${data.title}*
 
-*⛔ ▮ ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ\`:* ${data.description}
+*`👀 ➢| ᴠɪᴇᴡꜱ` :* *${data.views}*
 
-*⏰ ▮ ᴛɪᴍᴇ\`:* ${data.timestamp}
+*`⛔ ➢| ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ`:* *${data.description}*
 
-*📅 ▮ ᴀɢᴏ\`:* ${data.ago}
+*`⏰ ➢| ᴛɪᴍᴇ`:* *${data.timestamp}* 
 
-> *✯ᴘᴏᴡᴇʀᴅ ʙʏ✯ ~ＰＡＳＩＹＡ*`;
+*`📅 ➢| ᴀɢᴏ`:* *${data.ago}*
+
+> *𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬 || 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🧑‍💻*;
 
 //==========Send Thumbnail With Details==========
 await conn.sendMessage(m.chat, {
@@ -46,9 +47,9 @@ await conn.sendMessage(m.chat, {
     
     const downloadUrl = response.data.dl_link;
 //============Send Audio======================
-await conn.sendMessage(from,{audio:{url: downloadUrl },mimetype:"audio/mpeg",caption :"> *ᴘᴏᴡᴇʀᴅ ʙʏ ⑆ ~ᴘᴀꜱɪʏᴀ 🍂*"},{quoted:mek})
+await conn.sendMessage(from,{audio:{url: downloadUrl },mimetype:"audio/mpeg",caption :"𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬  ▏𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🎧🌼"},{quoted:mek})
 //=============Send Document=================
-await conn.sendMessage(from,{document:{url: downloadUrl },mimetype:"audio/mpeg",fileName: data.title + ".mp3" ,caption :"> *ᴘᴏᴡᴇʀᴅ ʙʏ ⑆ ~ᴘᴀꜱɪʏᴀ 🍂*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url: downloadUrl },mimetype:"audio/mpeg",fileName: data.title + ".mp3" ,caption :"𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬  ▏𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🎧🌼"},{quoted:mek})
 
 } catch (e) {
 console.log(e)

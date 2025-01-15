@@ -1,12 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
 const axios = require('axios');
 const config = require('../config')
 const {cmd , commands} = require('../command')
@@ -16,7 +7,7 @@ cmd({
     pattern: "trt",
     alias: ["translate"],
     desc: "🌍 Translate text between languages",
-    react: "⚡",
+    react: "🌐",
     category: "other",
     filename: __filename
 },
@@ -34,15 +25,15 @@ async (conn, mek, m, { from, q, reply }) => {
         const translation = response.data.responseData.translatedText;
 
         const translationMessage = `
-🌍 *KERM_MD-V4 TRANSLATION* 🌍
+🌍 *~PASIYA-MD-1 TRANSLATION* 🌍
 
-🔤 *Original*: ${textToTranslate}
+🔤 *𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥*: ${textToTranslate}
 
-🔠 *Translated*: ${translation}
+🔠 *𝐓𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐝*: ${translation}
 
-🌐 *Language*: ${targetLang.toUpperCase()}
+🌐 *𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞*: ${targetLang.toUpperCase()}
 
-*KERM_MD-V4 CREATION*`;
+*ᴄʀᴇᴀᴛᴇ ʙʏ ❱ ~ᴘᴀꜱɪʏᴀ-ᴍᴅ-1*`;
 
         return reply(translationMessage);
     } catch (e) {
@@ -56,7 +47,7 @@ cmd({
     pattern: "tts",
     desc: "download songs",
     category: "download",
-    react: "👧",
+    react: "👻",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {

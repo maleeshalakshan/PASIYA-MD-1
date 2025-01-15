@@ -25,15 +25,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > *🎧𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗔𝗨𝗗𝗜𝗢🎧*
 ╭──────────────────────
 
-> ☘️ ➢| ᴛɪᴛʟᴇ  :* *${data.title}*
+*☘️ ➢| ᴛɪᴛʟᴇ  :* *${data.title}*
 
-> 👀 ➢| ᴠɪᴇᴡꜱ  :* *${data.views}*
+*👀 ➢| ᴠɪᴇᴡꜱ  :* *${data.views}*
 
-> ⛔ ➢| ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ  :* *${data.description}*
+*⛔ ➢| ᴅᴇꜱᴄʀɪᴘᴛɪᴏᴍ  :* *${data.description}*
 
-> ⏰ ➢| ᴛɪᴍᴇ  :* *${data.timestamp}* 
+*⏰ ➢| ᴛɪᴍᴇ  :* *${data.timestamp}* 
 
-> 📅 ➢| ᴀɢᴏ  :* *${data.ago}*
+*📅 ➢| ᴀɢᴏ  :* *${data.ago}*
 
 > *𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬 || 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🧑‍💻*`;
 
@@ -46,6 +46,8 @@ await conn.sendMessage(m.chat, {
     const response = await fetchJson(`${domain}/api/ytmp3?videoUrl=${data.url}&apikey=${api_key}`);
     
     const downloadUrl = response.data.dl_link;
+//============Send Message======================
+await conn.sendMessage(𝘞𝘢𝘪𝘵 𝘚𝘦𝘯𝘥𝘪𝘯𝘨 𝘈𝘶𝘥𝘪𝘰𝘯 & 𝘋𝘰𝘤𝘶𝘮𝘦𝘯𝘵)     
 //============Send Audio======================
 await conn.sendMessage(from,{audio:{url: downloadUrl },mimetype:"audio/mpeg",caption :"𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬  ▏𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 🎧"},{quoted:mek})
 //=============Send Document=================

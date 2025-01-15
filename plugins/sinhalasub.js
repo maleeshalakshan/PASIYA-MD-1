@@ -97,6 +97,7 @@ cmd({
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
+                    await conn.sendMessage(from, { text: '*𝘜𝘗𝘓𝘖𝘈𝘋𝘌𝘋 𝘚𝘜𝘊𝘊𝘌𝘚𝘍𝘜𝘓𝘓𝘠 ✅*' })
                 };
 
                 // Listen for user's reply to select the download quality

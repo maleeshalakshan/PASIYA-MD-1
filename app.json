@@ -1,0 +1,31 @@
+{
+  "name": "SUPUN-MD",
+  "description": "Javascript WhatsApp bot made by Supun Fernando",
+  "logo": "https://i.ibb.co/bHXBV08/9242c844b83f7bf9.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "MONGODB": {
+      "description": "Put your mongodb.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}

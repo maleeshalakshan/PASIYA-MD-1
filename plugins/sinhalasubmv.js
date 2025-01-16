@@ -14,11 +14,9 @@ cmd({
 }, async (conn, m, mek, { from, isMe, isOwner, q, reply }) => {
     try {
         // Check if search query is provided
-        if (!q || q.trim() === '') return await reply('*Please provide a MV title Please ❗*');
+        if (!q || q.trim() === '') return await reply('*Please Provide a MV Title Please ❗*');
         if (!isMe && !isOwner) return await reply('*🔒You Are Not A Premium User 🔒🚫*
-
 *`❱  𝘗𝘓𝘌𝘈𝘚𝘌 𝘊𝘖𝘕𝘛𝘈𝘊𝘛 𝘖𝘞𝘕𝘌𝘙 𝘈𝘋𝘋 𝘗𝘙𝘌𝘔𝘐𝘜𝘔 𝘛𝘖 𝘠𝘖𝘜'𝘙𝘌 𝘈𝘊𝘊𝘖𝘜𝘕𝘛`*🔑
-
 ♔ Type *`.Owner`* Get Owner 
 Number 👾👨‍💻 ♔');
 

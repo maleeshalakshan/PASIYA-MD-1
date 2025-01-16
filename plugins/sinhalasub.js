@@ -35,7 +35,7 @@ cmd({
             const title = result.title || 'No title available';
             const link = result.link || 'No link available';
             const thumbnail = result.thumbnail || 'https://via.placeholder.com/150'; // Fallback if thumbnail is missing
-            resultsMessage += `*${index + 1}.* ${title}\n🔗 Link: ${link}\n`;
+            resultsMessage += `*${index + 1}.* ${title}\n🔗`;
 
             // You can also display the thumbnail in the results if needed
             resultsMessage += `📸 Thumbnail: ${thumbnail}\n\n`;
@@ -61,9 +61,9 @@ cmd({
                     return await reply('No download links found.');
                 }
 
-                let downloadMessage = `🎥 *${movieDetails.title}*\n\n*Available Download Links:*\n`;
+                let downloadMessage = `🎥 *${movieDetails.title}*\n\n*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘈𝘛𝘚 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙𝘚*\n\n`;
                 downloadLinks.forEach((link, index) => {
-                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}\n🔗 Link: ${link.link}\n\n`;
+                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}\n🔗 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗠𝗩 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥`;
                 });
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {

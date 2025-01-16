@@ -86,7 +86,7 @@ cmd({
                     const directDownloadUrl = `https://pixeldrain.com/api/file/${fileId}`;
 
                     await conn.sendMessage(from, { react: { text: '📽️', key: mek.key } });
-                    await conn.sendMessage(from, { react: {text:'⬆️'}})
+                
 
                     await conn.sendMessage(from, {
                                 document: {

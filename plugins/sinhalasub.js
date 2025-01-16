@@ -63,12 +63,12 @@ cmd({
 
                 let downloadMessage = `🎥 *${movieDetails.title}*\n\n*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘈𝘛𝘚 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙𝘚*\n\n`;
                 downloadLinks.forEach((link, index) => {
-                    downloadMessage += `*${index + 1}.* ${link.quality} - ${link.size}\n🔗 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗠𝗩 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥`;
+                    downloadMessage += `*${index + 01}.* ${link.quality} - ${link.size}\n🔗`;
                 });
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {
                     image: { url: selectedMovie.thumbnail }, // Show the selected movie's thumbnail
-                    caption: `${downloadMessage}`
+                    caption: `${downloadMessage}\n\n 🎬 𝗣𝗔𝗦𝗜𝗬𝗔-𝗠𝗗 𝗠𝗩 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🎬`
                 }, { quoted: replyMek });
 
                 const pixelDrainMessageID = pixelDrainMsg.key.id;

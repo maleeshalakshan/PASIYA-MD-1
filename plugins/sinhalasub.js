@@ -61,9 +61,9 @@ cmd({
                     return await reply('No download links found.');
                 }
 
-                let downloadMessage = `🎥 *${movieDetails.title}*\n\n*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘈𝘛𝘚 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙𝘚*\n\n`;
+                let downloadMessage = `🎥 *${movieDetails.title}*.*${movieDetails.runtime}*\n\n*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘈𝘛𝘚 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙𝘚*\n\n`;
                 downloadLinks.forEach((link, index) => {
-                    downloadMessage += `(${data.runtime})\n *${index + 01}.* ${link.quality} - ${link.size}\n`;
+                    downloadMessage += `*${index + 01}.* ${link.quality} - ${link.size}\n`;
                 });
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {

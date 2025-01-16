@@ -42,12 +42,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 caption: `
 *⛬ Image ${i + 1} from your search! ⛬*
 
- *©  𝖦ENERATED BY ~PASIYA ! 👾*
-
-> *ᴘᴀꜱɪʏᴀ-ᴍᴅ-1*`
+> *© ᴘᴀꜱɪʏᴀ-ᴍᴅ-1*`
 }, { quoted: mek });
 }
-
+====================sendMessage==================
+await conn.sendMessage(from
     } catch (e) {
         console.error(e);
         reply(`Error: ${e.message}`);

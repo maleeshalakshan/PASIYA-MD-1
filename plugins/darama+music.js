@@ -1,19 +1,8 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
-
-
 const {cmd , commands} = require('../command')
 const fg = require('api-dylux')
 const yts = require('yt-search')
 cmd({
-    pattern: "play2",
+    pattern: "play",
     desc: "To download songs.",
     react: "🎵",
     category: "download",
@@ -28,21 +17,21 @@ const url = data.url
     
     
 let desc = `
-⫷⦁*KERM_MD-V4 MUSⵊC DOWNLOADⵊNG*⦁⫸
-
+*🎶PASIYA_MD-V1 MUSⵊC DOWNLOADⵊNG🎶*
+╰──────────────────────────────
 🎵 *MUSⵊC FOUND!* 
-
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
+┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+> ➥ *☘️ Tɪᴛʟᴇ:* ${data.title} 
+> ➥ *⏳ Dᴜʀᴀᴛɪᴏɴ:* ${data.timestamp} 
+> ➥ *📉 Vɪᴇᴡꜱ:* ${data.views} 
+> ➥ *📅 Uᴘʟᴏᴀᴅᴇᴅ ᴏɴ:* ${data.ago} 
+> ➥ *🖇️ Lɪɴᴋ:* ${data.url} 
 
 🎧 *ENJOY THE MUSIC BROUGHT TO YOU!*
 
-> *KERM_MD-V4 WHATSAPP BOT* 
+> *PASIYA_MD-V1 WHATSAPP BOT* 
 
-> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ Kᴇʀᴍ_ᴍᴅ-ᴠ4* 
+> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ Pᴀꜱɪʏᴀ_ᴍᴅ-ᴠ1* 
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -65,7 +54,7 @@ console.log(e)
 //====================video_dl=======================
 
 cmd({
-    pattern: "darama",
+    pattern: "video2",
     alias: ["video2"],
     desc: "To download videos.",
     react: "🎥",
@@ -81,21 +70,21 @@ const url = data.url
     
     
 let desc = `
-⫷⦁*•KERM_MD-V4 VⵊDEO DOWNLOADⵊNG*⦁⫸ 
-
+*📺PASIYA_MD-V1 MUSⵊC DOWNLOADⵊNG📺*
+╰──────────────────────────────
 🎥 *VⵊDEO FOUND!* 
+┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+> ➥ *☘️ Tɪᴛʟᴇ:* ${data.title} 
+> ➥ *⏳ Dᴜʀᴀᴛɪᴏɴ:* ${data.timestamp} 
+> ➥ *📉 Vɪᴇᴡꜱ:* ${data.views} 
+> ➥ *📅 Uᴘʟᴏᴀᴅᴇᴅ ᴏɴ:* ${data.ago} 
+> ➥ *🖇️ Lɪɴᴋ:* ${data.url} 
 
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
+🎧 *ENJOY THE VIDEO BROUGHT TO YOU!*
 
-🎬 *ENJOY THE VIDEO BROUGHT TO YOU!*
+> *PASIYA_MD-V1 WHATSAPP BOT* 
 
-> *KERM_MD-V4 WHATSAPP BOT* 
-
-> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ Kᴇʀᴍ_ᴍᴅ-ᴠ4*
+> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ Pᴀꜱɪʏᴀ_ᴍᴅ-ᴠ1* 
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});

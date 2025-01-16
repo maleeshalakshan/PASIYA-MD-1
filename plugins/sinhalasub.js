@@ -57,7 +57,7 @@ cmd({
                     return await reply('No download links found.');
                 }
 
-                let downloadMessage = `🎥 *${movieDetails.title}*\n\n*Available Download Links:*\n`;
+                let downloadMessage = `🎥 *${movieDetails.title}*\n\n`;
                 downloadLinks.forEach((link, index) => {
                     downloadMessage += `*${index + 01}.* ${link.quality} - ${link.size}\n`;
                 });
@@ -65,7 +65,7 @@ cmd({
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {
                     image: { url: selectedMovie.thumbnail }, // Show the selected movie's thumbnail
                 }, { quoted: replyMek });
-                   caption: `${downloadMessage}`
+                   await conn.sendMessage(from, { text: `${downloadMessage}`})
                 const pixelDrainMessageID = pixelDrainMsg.key.id;
 
                 // Event listener for the user to choose download quality
@@ -92,6 +92,7 @@ cmd({
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
+                    await conn.sendMessage(from, { text: `*_ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ✓_*`})
                 };
 
                 // Listen for user's reply to select the download quality

@@ -86,7 +86,7 @@ cmd({
                     const directDownloadUrl = `https://pixeldrain.com/api/file/${fileId}`;
 
                     await conn.sendMessage(from, { react: { text: '📽️', key: mek.key } });
-                    await conn.sendMessage(from, { text: `*_ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ✓_*`})
+                    await conn.sendMessage(from, { react: {text:'⬆️'}})
 
                     await conn.sendMessage(from, {
                                 document: {
@@ -98,6 +98,7 @@ cmd({
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
+                    await conn.sendMessage(from, { text: `*_ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ✓_*`})
                 };
 
                 // Listen for user's reply to select the download quality

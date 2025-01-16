@@ -15,10 +15,7 @@ cmd({
     try {
         // Check if search query is provided
         if (!q || q.trim() === '') return await reply('*Please Provide a MV Title Please ❗*');
-        if (!isMe && !isOwner) return await reply('*🔒You Are Not A Premium User 🔒🚫*
-*`❱  𝘗𝘓𝘌𝘈𝘚𝘌 𝘊𝘖𝘕𝘛𝘈𝘊𝘛 𝘖𝘞𝘕𝘌𝘙 𝘈𝘋𝘋 𝘗𝘙𝘌𝘔𝘐𝘜𝘔 𝘛𝘖 𝘠𝘖𝘜'𝘙𝘌 𝘈𝘊𝘊𝘖𝘜𝘕𝘛`*🔑
-♔ Type *`.Owner`* Get Owner 
-Number 👾👨‍💻 ♔');
+        if (!isMe && !isOwner) return await reply('*🔒You Are Not A Premium User 🔒🚫*\n\n`_PLEASE CONTACT OWNER_`\n *Typer .`OWNER` Get Owner Number*');
 
         // Fetch search results from API
         const manu = await fetchJson(`${domain}/api/sl-sub-search?query=${q}&apikey=${api_key}`);

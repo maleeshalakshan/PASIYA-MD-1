@@ -46,7 +46,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 }, { quoted: mek });
 }
 ====================sendMessage==================
-await conn.sendMessage(from
+await conn.sendMessage(from, { text: `*_ᴜᴘʟᴏᴀᴅᴇᴅ ᴛʜᴇ ʏᴏᴜ ꜱᴇᴀʀᴄʜ ɪᴍᴀɢᴇꜱ ꜰᴏʀ ${i + 1}_*`})
     } catch (e) {
         console.error(e);
         reply(`Error: ${e.message}`);

@@ -32,10 +32,8 @@ cmd({
         // Format and send the search results message
         let resultsMessage = `*🎬~PASIYA-MD MV SEARCH 📎${q}📎 🎬*:\n\n`;
         searchResults.forEach((result, index) => {
-            const title = result.title || 'No title available';
-            const link = result.link || 'No link available';
-            const thumbnail = result.thumbnail || 'https://via.placeholder.com/150'; // Fallback if thumbnail is missing
-            resultsMessage += `*0${index + 1}.* ${title}\n🔗`;
+            const title = result.title || 'No title available'
+            resultsMessage += `*${index + 1}.* ${title}\n🔗`;
         });
 
         const sentMsg = await conn.sendMessage(m.chat, {
@@ -60,7 +58,7 @@ cmd({
                 let downloadMessage = `*🎥 Title :* *${movieDetails.title}*\n.\n*🔢𝘙𝘌𝘗𝘓𝘠 𝘛𝘏𝘈𝘛𝘚 𝘠𝘖𝘜 𝘞𝘈𝘕𝘛 𝘕𝘜𝘔𝘉𝘌𝘙𝘚*\n\n`;
                 downloadLinks.forEach((link, index) => {
                     downloadMessage += `*0${index + 1}.* ${link.quality} - ${link.size}\n`;
-                });
+                })
 
                 const pixelDrainMsg = await conn.sendMessage(m.chat, {
                     image: { url: selectedMovie.thumbnail }, // Show the selected movie's thumbnail

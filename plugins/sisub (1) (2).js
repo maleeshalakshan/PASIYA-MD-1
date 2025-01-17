@@ -64,7 +64,7 @@ cmd({
 
             const thumbnail = result.thumbnail || 'https://via.placeholder.com/150'; // Fallback if thumbnail is missing
 
-            resultsMessage += `*${index + 1}. ▏|* ${title}\n\n>`;
+            resultsMessage += `*${index + 1}. ▏|* ${title}\n\n`;
 
             // You can also display the thumbnail in the results if needed
 

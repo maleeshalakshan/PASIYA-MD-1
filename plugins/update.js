@@ -1,12 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
 const config = require('../config');
 let fs = require('fs');
 const { exec } = require('child_process');
@@ -14,14 +5,14 @@ const { cmd } = require('../command');
 
 cmd({
     pattern: "update",
-    react: "🔄",
+    react: "♻️",
     desc: "Update folder from GitHub",
     category: "system",
     use: '.update',
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
-        const repoUrl = 'https://github.com/Kgtech-cmr/KERM_MD-V4.git'; // لینک مخزن گیت‌هاب
+        const repoUrl = 'https://github.com/maleeshalakshan/PASIYA-MD-1.git'; // لینک مخزن گیت‌هاب
         const targetFolder = 'plugins'; // پوشه‌ای که باید به‌روز شود
 
         // بررسی وجود پوشه هدف
@@ -46,7 +37,7 @@ cmd({
         });
 
         // ارسال پیام موفقیت
-        await conn.sendMessage(from, { text: '*✅ Update completed successfully!*' }, { quoted: mek });
+        await conn.sendMessage(from, { text: '*_UPDATE SUCCESFULLY ✅_*' }, { quoted: mek });
     } catch (error) {
         console.error(error);
         reply(`*Error during update:* ${error.message}`);

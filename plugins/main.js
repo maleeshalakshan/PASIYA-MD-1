@@ -146,11 +146,7 @@ module.exports = async (conn, from, userMsg, selectedOption) => {
 *🖨️➣Use:* .bug4 <number>
 
 *© ᴩᴀꜱɪʏᴀ ᴍᴅ ᴍᴀᴅᴇ 𝐂ʀᴏɴᴀ 𝐗ᴅ*
-`;
-            break;
-        }
-        case '7': {
-            response = `*PASIYA-MD-V1 MAIN COMMANDS MENU*
+ MAIN COMMANDS MENU*
 
 *📌➣Command :* alive
 *📃➣Desc :* Bot's main message and info
@@ -338,7 +334,7 @@ module.exports = async (conn, from, userMsg, selectedOption) => {
                 title: " 𝐏𝐀𝐒𝐈𝐘𝐀 𝐌𝐃 𝐕𝟏 𝐖𝐀 𝐁𝐎𝐓😌",
                 body: "ᴀ ᴩᴀꜱɪʏᴀ ᴍᴅ ᴠ1ᴡᴀ ʙᴏᴛ ",
                 sourceUrl: 'https://www.youtube.com',
-                thumbnailUrl: 'https://ik.imagekit.io/eypz/1725191604705_6ZNoT_vdy.png'',
+                thumbnailUrl: 'https://ik.imagekit.io/eypz/1725191604705_6ZNoT_vdy.png',
                 mediaType: 1,
                 renderLargerThumbnail: false,
                 }

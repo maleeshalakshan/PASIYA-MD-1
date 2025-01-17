@@ -12,20 +12,20 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let status = `
-*PASIYA-MD V1 SYSTEM LIST↷*
-*━━━━━━━━━━━━━━━━━━━━━━━━━━━━*
+let status = `*⚙️ 𝐏𝐀𝐒𝐈𝐘𝐀_𝐌𝐃 𝐒𝐘𝐒𝐓𝐄𝐌 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍*
 
-⌛ *ᴜᴘᴛɪᴍᴇ:➤*  ${runtime(process.uptime())}
 
-♻️ *ʀᴀᴍ ᴜꜱᴀɢᴇ:➤* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+╭─────────────────────
+ `⌛ 𝚄𝙿𝚃𝙸𝙼𝙴`▎  
 
-🔌 *ʜᴏꜱᴛ ɴᴀᴍᴇ:➤* ${os.hostname()}
+`📟 𝚁𝙰𝙼 𝚄𝚂𝙰𝙶𝙴 :`▎
 
-*╭────────────────────⚬
-👾 *ᴏᴡɴᴇʀ:➤* *PASINDU ♚* 🧑‍💻🖇️
-*╰────────────────────⚬
-`
+`🖥️𝙳𝙴𝙿𝙻𝙾𝚈 𝙿𝙻𝙰𝚃𝙵𝙾𝚁𝙼 :`▎  
+
+╰──────────────────────
+
+> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ៚ 𝙿𝙰𝚂𝙸𝚈𝙰_𝙼𝙳*`
+    
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:`${status}`},{quoted:mek})
 
 }catch(e){

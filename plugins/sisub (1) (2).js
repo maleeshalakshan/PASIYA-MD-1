@@ -54,7 +54,7 @@ cmd({
   *🎬ᴘᴀꜱɪʏᴀ_ᴍᴅ ᴍᴠ ꜱᴇᴀʀᴄʜ🎬*
 ━━━━━━━━━━━━♚━━━━━━━━━━━━\n
 
- 🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐍𝐚𝐦𝐞 = ${q} :\n\nSearch Results From = ☛Sinhalasub.net☚`;
+ 🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐍𝐚𝐦𝐞 = ${q} :\n\nSearch Results From = ☛Sinhalasub.net☚\n`;
 
         searchResults.forEach((result, index) => {
 
@@ -64,7 +64,7 @@ cmd({
 
             const thumbnail = result.thumbnail || 'https://via.placeholder.com/150'; // Fallback if thumbnail is missing
 
-            resultsMessage += `*${index + 1}. ▏|* ${title}\n\n`;
+            resultsMessage += `*${index + 1}. ▏|* ${title}\n\n>`;
 
             // You can also display the thumbnail in the results if needed
 
@@ -74,7 +74,7 @@ cmd({
 
             image: { url: searchResults[0].thumbnail }, // Show the thumbnail of the first result
 
-            caption: `${resultsMessage}`
+            caption: `${resultsMessage}\n\n> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ♤ 𝐏𝐀𝐒𝐈𝐘𝐀_𝐌𝐃 ☻*`
 
         }, { quoted: mek });
 

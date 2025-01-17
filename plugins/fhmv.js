@@ -12,7 +12,7 @@ cmd({
 
     pattern: "mv2",
 
-    alias: ["moviefire", "moviesearch"],
+    alias: ["mv2", "fmv"],
 
     react: "📺",
 

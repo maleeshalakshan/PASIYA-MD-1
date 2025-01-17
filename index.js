@@ -75,7 +75,7 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Bot connected to whatsapp ✅')
+console.log('PASIYA_MD connected to whatsapp ✅')
 
 let up = `*PASIYA-MD 𝘊𝘖𝘕𝘕𝘌𝘊𝘛𝘌𝘋 𝘚𝘜𝘊𝘊𝘌𝘚𝘚𝘍𝘜𝘓* ✅\n\n\n\n> ᴍᴀᴅᴇ ʙʏ ᴅᴀʀᴋ ꜱʜᴀᴅᴏᴡ ᴛᴇᴀᴍ`;
 const inviteCode =`DBQzrKiB81SCw4q61Cvbxl`

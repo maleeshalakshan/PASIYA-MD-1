@@ -54,7 +54,7 @@ cmd({
   *🎬ᴘᴀꜱɪʏᴀ_ᴍᴅ ᴍᴠ ꜱᴇᴀʀᴄʜ🎬*
 ━━━━━━━━━━━━♚━━━━━━━━━━━━\n
 
- 🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐍𝐚𝐦𝐞 = ${q} :\n\nSearch Results From = ☛Sinhalasub.net☚\n`;
+ 🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐍𝐚𝐦𝐞 = ${q} :\nSearch Results From = ☛ sinhalasub.net ☚\n\n`;
 
         searchResults.forEach((result, index) => {
 

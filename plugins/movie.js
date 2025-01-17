@@ -1,13 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
-
-
-
-
 const axios = require('axios');
 const { cmd } = require('../command');
 const config = require('../config'); // Ensure your API key is in config

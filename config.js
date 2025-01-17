@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 
-SESSION_ID: process.env.SESSION_ID || "2nB1VQbQ#cYF7BcH7D4D5FxEZ5HU6W9zFpJQs-2n1xLP3-I_sZKY",
+SESSION_ID: process.env.SESSION_ID || "eV0TVBJI#yjS5fl029wK4P56eomjVPjdbq42Sto98GzQK43Vjo9w",
 MONGODB: process.env.MONGODB || "mongodb+srv://laramd:sadeesha2006@anya.gvsp435.mongodb.net/?retryWrites=true&w=majority&appName=Anya",
 MODE: process.env.MODE || "public",  
 PREFIX: process.env.PREFIX || ".",   

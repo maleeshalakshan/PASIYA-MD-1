@@ -158,6 +158,7 @@ cmd({
                             }, { quoted: pdReply });
 
                     await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
+                    const message = await conn.sendMessage(from, { text: '*_ᴍᴠ ᴜᴘʟᴏᴀᴅ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ✓_*' })
 
                 };
 

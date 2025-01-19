@@ -10,7 +10,7 @@ cmd({
 
     pattern: "sinhala",
 
-    alias: ["mv", "sisub"],
+    alias: ["mv", "sinhalasub"],
 
     react: '📺',
 

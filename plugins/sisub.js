@@ -26,7 +26,7 @@ cmd({
 
         // Check if search query is provided
 
-        if (!q || q.trim() === '') return await reply('*Please provide a MV title Please ❗*');
+        if (!q || q.trim() === '') return await reply('*Give me a movie name*');
 
         if (!isMe && !isOwner) return await reply('*🚫If You are Not a Premium User 🚫*');
 
@@ -115,7 +115,7 @@ cmd({
 
                     image: { url: selectedMovie.thumbnail }, // Show the selected movie's thumbnail
 
-                    caption: `${downloadMessage}\n\n > *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴘᴀꜱɪʏᴀ_ᴍᴅ-ᴠ1*`
+                    caption: `${downloadMessage}\n\n> *© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴘᴀꜱɪʏᴀ_ᴍᴅ-ᴠ1*`
 
                 }, { quoted: replyMek });
 
@@ -153,7 +153,7 @@ cmd({
 
                                 fileName: `📽️ᴘᴀꜱɪ ᴍᴠ📽️ ${movieDetails.title} - ${selectedLink.quality}.mp4`,
 
-                                caption: `> *~ᴘᴀꜱɪʏᴀ ᴍᴠ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*`
+                                caption: `> *© ᴘᴀꜱɪʏᴀ ᴍᴠ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*`
 
                             }, { quoted: pdReply });
 
